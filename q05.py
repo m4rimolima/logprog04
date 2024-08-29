@@ -10,40 +10,46 @@ while resp != '0' :
     if resp == '1':
         print ('''
             ------calc.py------
-            a-Soma
-            b-Subtração
-            c-Multiplicação
-            d-Divisão
-            e-Elevar ao quadrado
+            1-Soma
+            2-Subtração
+            3-Multiplicação
+            4-Divisão
+            5-Elevar ao quadrado
+            6-Sair
             ''')
         
         ope = input ('Escolha uma operação: ')
-        if ope == 'a':
+
+        if ope == '1':
             print('Escolheu a soma')
             n1= int(input('diga-me um número: '))
             n2= int(input('diga-me outro número: '))
             print(f'{n1+n2}')
-
-        if ope == 'b':
-            print('Escolheu a subtração')
-            n1= int(input('diga-me um número: '))
-            n2= int(input('diga-me outro número: '))
-            print(f'{n1-n2}')
-
-        if ope == 'c':
-            print('Escolheu a multiplicação')
-            n1= int(input('diga-me um número: '))
-            n2= int(input('diga-me outro número: '))
-            print(f'{n1*n2}')
-
-        if ope == 'd':
-            print('Escolheu a divisão')
-            n1= int(input('diga-me um número: '))
-            n2= int(input('diga-me outro número: '))
-            print(f'{n1/n2}')
-
-        if ope == 'e':
-            print('Escolheu elevar o número ao quadrado')
-            n1= int(input('diga-me um número: '))
-            print(f'{n1*n1}')
-
+        else:
+            if ope == '2':
+                print('Escolheu a subtração')
+                n1= int(input('diga-me um número: '))
+                n2= int(input('diga-me outro número: '))
+                print(f'{n1-n2}')
+            else:
+                if ope == '3':
+                    print('Escolheu a multiplicação')
+                    n1= int(input('diga-me um número: '))
+                    n2= int(input('diga-me outro número: '))
+                    print(f'{n1*n2}')
+                else:
+                    if ope == '4':
+                        print('Escolheu a divisão')
+                        n1= int(input('diga-me um número: '))
+                        n2= int(input('diga-me outro número: '))
+                        print(f'{n1/n2}')
+                    else:
+                        if ope == '5':
+                            print('Escolheu elevar o número ao quadrado')
+                            n1= int(input('diga-me um número: '))
+                            print(f'{n1*n1}')
+                        else:
+                            if ope == "6":
+                                print('tchau')
+                            else:
+                                print('erro, tente novamente')
